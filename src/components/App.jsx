@@ -1,6 +1,6 @@
 
 import { Global } from "./Global";
-import { Container, Section } from "./Container";
+import { Container } from "./Container";
 import users from "../data/users.json";
 import { ProfileList } from "./PrifileList/ProfileList";
 import { Statistics } from "./Statistics/Statistics";
@@ -22,7 +22,7 @@ export const App = () => {
     title='Upload stats'
     items = {stats}
     />
-    
+
     <FriendsList 
     items={friends} 
     title="Friends"/>
