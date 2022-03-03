@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Section } from "components/Container";
 
 
 export const Stats = styled.div`
