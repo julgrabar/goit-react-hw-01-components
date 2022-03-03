@@ -4,24 +4,29 @@ import { Container, Section } from "./Container";
 import users from "../data/users.json";
 import { ProfileList } from "./PrifileList/ProfileList";
 import { Statistics } from "./Statistics/Statistics";
-import stats from '../data/statistics.json'
+import stats from '../data/statistics.json';
+import friends from '../data/friends.json';
+import { FriendsList } from "./FriendsList/FriendsList";
 
 export const App = () => {
   return (
     <Container>
     <Global />
-    <Section>
-      <ProfileList 
-      items ={users}
-      title= "Users"
-      />
-    </Section>
-    <Section>
-      <Statistics 
-      title='Upload stats'
-      items = {stats}
-      />
-    </Section>
+    
+    <ProfileList 
+    items ={users}
+    title= "Users"
+    />
+
+    <Statistics 
+    title='Upload stats'
+    items = {stats}
+    />
+    
+    <FriendsList 
+    items={friends} 
+    title="Friends"/>
+
     </Container>
   );
 };

@@ -1,8 +1,8 @@
 import styled from "styled-components";
-// import { Section } from "components/Container";
+import { Section } from "components/Container";
 
 
-export const Stats = styled.section`
+export const Stats = styled.div`
     width: 80%;
     margin: 0 auto;
     background-color: #fff;

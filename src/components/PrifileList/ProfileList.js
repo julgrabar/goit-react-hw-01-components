@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import { Profile } from 'components/Profile/Profile';
 import {StyledProfileList, ProfileItem} from "./ProfileList.styled";
 import { Title } from 'components/Title/Title.styled';
+import { Section } from 'components/Container';
 
 export const ProfileList = ({items , title}) => {
     return (
-        <div>
+        <Section>
             {title && <Title>{title}</Title>}
             <StyledProfileList>
             {items.map((item)=>(
@@ -22,7 +23,7 @@ export const ProfileList = ({items , title}) => {
             ))
             }
         </StyledProfileList>
-        </div>
+        </Section>
     )
 }
 
