@@ -7,6 +7,8 @@ import { Statistics } from "./Statistics/Statistics";
 import stats from '../data/statistics.json';
 import friends from '../data/friends.json';
 import { FriendsList } from "./FriendsList/FriendsList";
+import { Transactions } from "./TransactionsHistory/TransactionsHistoty";
+import transactions from "../data/transactions.json"
 
 export const App = () => {
   return (
@@ -27,6 +29,10 @@ export const App = () => {
     items={friends} 
     title="Friends"/>
 
+    <Transactions
+    items={transactions}
+    title="Transaction history"
+    />
     </Container>
   );
 };
