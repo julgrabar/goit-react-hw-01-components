@@ -6,7 +6,7 @@ import {ThemeProvider} from 'styled-components';
 
 const theme = {
   colors: {
-    bodyColor: '#eceff1'
+    bodyColor: '#eceff1',
   }
 }
 
@@ -18,4 +18,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { BigText } from "components/Title/BigText.styled";
 
 import { UserProfile, Description, StatsList, StatsItem,Name, Label } from './Profile.styled';
 
@@ -18,15 +19,15 @@ export const Profile = ({username, tag, location, avatar, stats}) => {
             <StatsList>
                 <StatsItem>
                 <Label>Followers</Label>
-                <span>{stats.followers}</span>
+                <BigText size="18px">{stats.followers}</BigText>
                 </StatsItem>
                 <StatsItem>
                 <Label>Views</Label>
-                <span>{stats.views}</span>
+                <BigText size="18px">{stats.views}</BigText>
                 </StatsItem>
                 <StatsItem>
                 <Label>Likes</Label>
-                <span>{stats.likes}</span>
+                <BigText size="18px">{stats.likes}</BigText>
                 </StatsItem>
             </StatsList>
         </UserProfile>
@@ -41,5 +42,6 @@ Profile.propTypes = {
     avatar:PropTypes.string.isRequired,
     stats: PropTypes.objectOf(
         PropTypes.number
-      )
+      ),
+    size: PropTypes.string
 }

@@ -8,8 +8,7 @@ export const ProfileList = ({items , title}) => {
     return (
         <div>
             {title && <Title>{title}</Title>}
-        <StyledProfileList>
-            
+            <StyledProfileList>
             {items.map((item)=>(
                     <ProfileItem key={item.tag}>
                         <Profile 
