@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import { Section } from "components/Container";
+import { Section } from "components/Utils/Container";
 import { Title } from "components/Title/Title.styled";
 import { TransactionTable } from "./TransactionsHistory.styled";
 

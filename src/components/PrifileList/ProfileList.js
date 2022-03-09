@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Profile } from 'components/Profile/Profile';
 import {StyledProfileList, ProfileItem} from "./ProfileList.styled";
 import { Title } from 'components/Title/Title.styled';
-import { Section } from 'components/Container';
+import { Section } from 'components/Utils/Container';
 
 export const ProfileList = ({items , title}) => {
     return (

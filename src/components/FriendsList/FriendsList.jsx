@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 import { FriendItem } from "components/FriendItem/FriendItem";
 import { StyledFriendsList } from "./FriendsList.styled";
-import { Section } from "components/Container";
+import { Section } from "components/Utils/Container";
 import { Title } from "components/Title/Title.styled";
 
 export const FriendsList = ({items, title}) => {

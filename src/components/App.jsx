@@ -1,6 +1,6 @@
 
-import { Global } from "./Global";
-import { Container } from "./Container";
+import { Global } from "./Utils/Global";
+import { Container } from "./Utils/Container";
 import users from "../data/users.json";
 import { ProfileList } from "./PrifileList/ProfileList";
 import { Statistics } from "./Statistics/Statistics";

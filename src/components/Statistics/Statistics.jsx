@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Title } from "components/Title/Title.styled";
 import { Stats, StatsItem } from "./Statistics.styled";
 import { BigText } from "components/Title/BigText.styled";
-import { Section } from "components/Container";
+import { Section } from "components/Utils/Container";
 
 
 export const Statistics = ({title,items}) => {
