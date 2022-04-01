@@ -6,13 +6,13 @@ import { BigText } from "components/Title/BigText.styled";
 import { Section } from "components/Utils/Container";
 
 
-export const Statistics = ({title,items}) => {
+export const Statistics = ({title,stats}) => {
     return (
         <Section>
         <Stats>
             {title && <Title>{title}</Title>}
             <ul>
-                {items.map(({id, label, percentage})=>(
+                {stats.map(({id, label, percentage})=>(
                     <StatsItem key={id} color={getRandomHexColor()}>
                         <span>{label}</span><br></br>
                         <BigText size='24px'>{percentage}%</BigText>
@@ -28,7 +28,7 @@ export const Statistics = ({title,items}) => {
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    items: PropTypes.arrayOf(
+    stats: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.string.isRequired,
             label: PropTypes.string.isRequired,
@@ -37,6 +37,7 @@ Statistics.propTypes = {
     ),
     size: PropTypes.string
 }
+
 function getRandomHexColor() {
     return `#${String(Math.floor(Math.random() * 16777215).toString(16)).padEnd(6, '0')}`;
   }

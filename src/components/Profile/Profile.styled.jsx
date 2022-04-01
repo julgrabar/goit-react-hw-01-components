@@ -4,6 +4,8 @@ export const UserProfile= styled.div`
     border-radius: 10px;
     background-color: #fff;
     overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
 `
 
 export const Description = styled.div`

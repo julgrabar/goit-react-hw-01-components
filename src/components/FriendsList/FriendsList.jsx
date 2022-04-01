@@ -3,19 +3,17 @@ import PropTypes from "prop-types";
 import { FriendItem } from "components/FriendItem/FriendItem";
 import { StyledFriendsList } from "./FriendsList.styled";
 import { Section } from "components/Utils/Container";
-import { Title } from "components/Title/Title.styled";
 
-export const FriendsList = ({items, title}) => {
+export const FriendsList = ({friends}) => {
     return (
         <Section>
-        {title && <Title>{title}</Title>}
         <StyledFriendsList>
-        {items.map((item)=>(
+        {friends.map(({id,name,isOnline,avatar})=>(
             <FriendItem 
-                key = {item.id}
-                name={item.name}
-                isOnline = {item.isOnline}
-                avatar= {item.avatar}
+                key = {id}
+                name={name}
+                isOnline = {isOnline}
+                avatar= {avatar}
             />
         ))}
         </StyledFriendsList>
@@ -24,8 +22,7 @@ export const FriendsList = ({items, title}) => {
 }
 
 FriendsList.propTypes = {
-    title: PropTypes.string,
-    items: PropTypes.arrayOf(
+    friends: PropTypes.arrayOf(
         PropTypes.shape({
           id: PropTypes.number.isRequired
         })

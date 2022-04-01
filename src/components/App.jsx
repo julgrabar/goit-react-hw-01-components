@@ -1,37 +1,40 @@
 
 import { Global } from "./Utils/Global";
 import { Container } from "./Utils/Container";
-import users from "../data/users.json";
-import { ProfileList } from "./PrifileList/ProfileList";
+import user from "../data/users.json";
+import { Profile } from "./Profile/Profile";
 import { Statistics } from "./Statistics/Statistics";
-import stats from '../data/statistics.json';
+import data from '../data/statistics.json';
 import friends from '../data/friends.json';
 import { FriendsList } from "./FriendsList/FriendsList";
-import { Transactions } from "./TransactionsHistory/TransactionsHistoty";
+import { TransactionHistory } from "./TransactionsHistory/TransactionsHistoty";
 import transactions from "../data/transactions.json"
+
 
 export const App = () => {
   return (
     <Container>
     <Global />
     
-    <ProfileList 
-    items ={users}
-    title= "Users"
+    <Profile 
+    username={user.username}
+    tag={user.tag}
+    location = {user.location}
+    avatar = {user.avatar}
+    stats = {user.stats}
     />
 
     <Statistics 
     title='Upload stats'
-    items = {stats}
+    stats={data}
     />
 
     <FriendsList 
-    items={friends} 
-    title="Friends"/>
+    friends={friends}
+    />
 
-    <Transactions
+    <TransactionHistory
     items={transactions}
-    title="Transaction history"
     />
     </Container>
   );

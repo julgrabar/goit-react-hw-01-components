@@ -1,4 +1,4 @@
-[{
+{
     "username": "Jacques Gluke",
     "tag": "jgluke",
     "location": "Ocho Rios, Jamaica",
@@ -8,38 +8,4 @@
       "views": 4827,
       "likes": 1308
     }
-  },
-  {
-    "username": "Eric EdWards",
-    "tag": "eedyy",
-    "location": "Candytown, Ohola",
-    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-    "stats": {
-      "followers": 555,
-      "views": 425252,
-      "likes": 1444
-    }
-  },
-  {
-    "username": "Stacy Jam",
-    "tag": "jammyStace",
-    "location": "Maholo, Dominicana",
-    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-    "stats": {
-      "followers": 88888,
-      "views": 5555,
-      "likes": 545
-    }
-  },
-  {
-    "username": "Anna Semenova",
-    "tag": "prettyAnn",
-    "location": "Kiev, Ukraine",
-    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-    "stats": {
-      "followers": 5555,
-      "views": 7777,
-      "likes": 1244
-    }
   }
-]

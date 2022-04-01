@@ -1,14 +1,12 @@
 import PropTypes from "prop-types";
 
 import { Section } from "components/Utils/Container";
-import { Title } from "components/Title/Title.styled";
 import { TransactionTable } from "./TransactionsHistory.styled";
 
 
-export const Transactions = ({items,title}) =>{
+export const TransactionHistory = ({items}) =>{
     return(
         <Section>
-        {title && <Title>{title}</Title>}
         <TransactionTable >
             <thead>
                 <tr>
@@ -34,8 +32,7 @@ export const Transactions = ({items,title}) =>{
 }
 
 
-Transactions.propTypes = {
-    title: PropTypes.string,
+TransactionHistory.propTypes = {
     items: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.string.isRequired,

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { StyledFriendItem } from "./FriendItem.styled";
 import { IsOnline } from "./FriendItem.styled";
 
-export const FriendItem = ({avatar, name,isOnline}) =>{
+export const FriendItem = ({avatar, name, isOnline}) =>{
     return (
     <StyledFriendItem>
         <IsOnline status = {isOnline} />
